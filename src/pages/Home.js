@@ -1,10 +1,39 @@
+import "../styles/Home.css"; // 스타일 파일 불러오기
+
 function Home() {
-    return (
-      <div>
-        <h1>안녕하세요, 조영석의 포트폴리오입니다!</h1>
-        <p>상단의 네비게이션 버튼을 눌러 저를 확인할 수 있습니다.</p>
-      </div>
-    );
-  }
-  
-  export default Home;
+  return (
+    <div className="home-container">
+      {/* Hero Section */}
+      <section className="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>프로그래밍을 사랑하는 개발자, 더 나은 소프트웨어를 만들기 위해 노력합니다.</p>
+        <a href="/projects" className="cta-button">프로젝트 보기</a>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <div className="feature-item">
+          <h2>🚀 최신 기술 활용</h2>
+          <p>React, Spring Boot, MySQL, MyBatis 등 다양한 기술 스택을 경험하고 있습니다.</p>
+        </div>
+        <div className="feature-item">
+          <h2>💡 지속적인 학습</h2>
+          <p>더 나은 코드를 작성하기 위해 끊임없이 공부하며 성장하는 개발자입니다.</p>
+        </div>
+        <div className="feature-item">
+          <h2>🎯 문제 해결 능력</h2>
+          <p>효율적인 알고리즘과 데이터베이스 설계를 통해 문제를 해결합니다.</p>
+        </div>
+      </section>
+
+      {/* Resume Download Button */}
+      <section className="resume-section">
+        <a href="/resume.pdf" download className="resume-button">
+          📄 이력서 다운로드
+        </a>
+      </section>
+    </div>
+  );
+}
+
+export default Home;
