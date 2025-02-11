@@ -1,39 +1,71 @@
-.stack-container {
-  text-align: center;
+/* 전체 페이지 중앙 정렬 */
+.stack-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
 }
 
+/* 기술 스택 컨테이너 */
+.stack-container {
+  text-align: center;
+  max-width: 700px;
+  padding: 40px 20px;
+  background-color: #292929; /* 🔥 어두운 배경 */
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 제목 스타일 */
+.stack-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+/* 설명 스타일 */
+.stack-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* 기술 스택 리스트 */
 .stack-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
 }
 
+/* 개별 기술 아이템 */
 .stack-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  font-size: 1.2rem;
-  padding: 10px 15px;
-  background: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.3s ease-in-out, background 0.3s;
 }
 
+/* 아이콘 이미지 */
+.icon-img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* 호버 효과 */
 .stack-item:hover {
   transform: scale(1.1);
-}
-
-.stack-item img {
-  width: 30px;
-  height: 30px;
-}
-
-.stack-description {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 15px;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
 }
