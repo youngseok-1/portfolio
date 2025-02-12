@@ -2,7 +2,7 @@
 .home-container {
     width: 100%;
     max-width: 1920px;  /* 최대 너비를 1920px로 고정 */
-    height: 100vh;  /* 뷰포트 높이를 100%로 설정 */
+    height: 120vh;  /* 뷰포트 높이를 100%로 설정 */
     min-height: 100vh; 
     margin: 0 auto;
     text-align: center;
