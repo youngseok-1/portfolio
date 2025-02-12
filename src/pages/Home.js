@@ -15,7 +15,7 @@ function Home() {
       <section className="features">
         <div className="feature-item">
           <h2>🚀 최신 기술 활용</h2>
-          <p>React, Spring Boot, MySQL, MyBatis 등 다양한 기술 스택을 경험하고 있습니다.</p>
+          <p>React, MySQL, MyBatis 등 다양한 기술 스택을 경험하고 있습니다.</p>
         </div>
         <div className="feature-item">
           <h2>💡 지속적인 학습</h2>

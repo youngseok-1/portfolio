@@ -4,6 +4,7 @@ import Projects from "./pages/Projects";
 import Stacks from "./pages/Stacks";
 import Contact from "./pages/Contact";
 import Navbar from "./ui/Navbar";
+import "./styles/global.css";
 
 function App() {
   return (
