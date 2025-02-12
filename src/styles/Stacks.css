@@ -5,6 +5,7 @@
   align-items: center;
   height: 100vh;
   background-color: #1a1a1a;
+  padding: 20px; /* 모바일에서 잘리거나 꽉 차는 현상 방지 */
 }
 
 /* 기술 스택 컨테이너 */
@@ -68,4 +69,31 @@
 .stack-item:hover {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 반응형: 모바일에서는 두 줄 정렬 */
+@media screen and (max-width: 768px) {
+  .stack-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2열(두 줄)로 표시 */
+    gap: 15px;
+  }
+
+  .stack-item {
+    width: 140px;
+    height: 140px;
+    font-size: 1.1rem;
+  }
+
+  .icon-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* 🔹 작은 모바일 (480px 이하)에서는 한 줄에 1개 */
+@media screen and (max-width: 480px) {
+  .stack-list {
+    grid-template-columns: repeat(1, 1fr); /* 한 줄에 1개 */
+  }
 }
