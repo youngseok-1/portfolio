@@ -1,4 +1,5 @@
-import "../styles/Home.css"; // 스타일 파일 불러오기
+import "../styles/Home.css"; 
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -7,7 +8,7 @@ function Home() {
       <section className="hero">
         <h1>Welcome to My Portfolio</h1>
         <p>프로그래밍을 사랑하는 개발자, 더 나은 소프트웨어를 만들기 위해 노력합니다.</p>
-        <a href="/projects" className="cta-button">프로젝트 보기</a>
+        <Link to="/projects" className="cta-button">프로젝트 보기</Link>
       </section>
 
       {/* Features Section */}

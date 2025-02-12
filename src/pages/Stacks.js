@@ -10,39 +10,39 @@ function Stack() {
         </p>
         <div className="stack-list">
           <div className="stack-item">
-            <img src="/icons/react.svg" alt="React" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/react.svg`} alt="React" className="icon-img" />
             React
           </div>
           <div className="stack-item">
-            <img src="/icons/javascript.svg" alt="JavaScript" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/javascript.svg`} alt="JavaScript" className="icon-img" />
             JavaScript
           </div>
           <div className="stack-item">
-            <img src="/icons/html5.svg" alt="HTML5" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/html5.svg`} alt="HTML5" className="icon-img" />
             HTML5
           </div>
           <div className="stack-item">
-            <img src="/icons/css3.svg" alt="CSS3" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/css3.svg`} alt="CSS3" className="icon-img" />
             CSS3
           </div>
           <div className="stack-item">
-            <img src="/icons/mysql.svg" alt="MySQL" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/mysql.svg`} alt="MySQL" className="icon-img" />
             MySQL
           </div>
           <div className="stack-item">
-            <img src="/icons/intellij.svg" alt="IntelliJ" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/intellij.svg`} alt="IntelliJ" className="icon-img" />
             IntelliJ
           </div>
           <div className="stack-item">
-            <img src="/icons/vscode.svg" alt="VS Code" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/vscode.svg`} alt="VS Code" className="icon-img" />
             VS Code
           </div>
           <div className="stack-item">
-            <img src="/icons/springboot.svg" alt="Spring Boot" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/springboot.svg`} alt="Spring Boot" className="icon-img" />
             Spring Boot
           </div>
           <div className="stack-item">
-            <img src="/icons/mybatis.svg" alt="MyBatis" className="icon-img" />
+            <img src={`${process.env.PUBLIC_URL}/icons/mybatis.svg`} alt="MyBatis" className="icon-img" />
             MyBatis
           </div>
         </div>
