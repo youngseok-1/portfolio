@@ -26,16 +26,12 @@ function Stack() {
             CSS3
           </div>
           <div className="stack-item">
+            <img src={`${process.env.PUBLIC_URL}/icons/java.svg`} alt="java3" className="icon-img" />
+            JAVA
+          </div>
+          <div className="stack-item">
             <img src={`${process.env.PUBLIC_URL}/icons/mysql.svg`} alt="MySQL" className="icon-img" />
             MySQL
-          </div>
-          <div className="stack-item">
-            <img src={`${process.env.PUBLIC_URL}/icons/intellij.svg`} alt="IntelliJ" className="icon-img" />
-            IntelliJ
-          </div>
-          <div className="stack-item">
-            <img src={`${process.env.PUBLIC_URL}/icons/vscode.svg`} alt="VS Code" className="icon-img" />
-            VS Code
           </div>
           <div className="stack-item">
             <img src={`${process.env.PUBLIC_URL}/icons/springboot.svg`} alt="Spring Boot" className="icon-img" />

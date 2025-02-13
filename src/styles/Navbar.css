@@ -50,6 +50,7 @@
 
 /* 🔹 햄버거 버튼 클릭 시 메뉴 보이기 */
 .nav-menu.active {
+  right: 0;
   display: flex;
   opacity: 1;
   visibility: visible;

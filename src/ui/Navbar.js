@@ -26,7 +26,7 @@ function Navbar() {
           <Link to="/" onClick={toggleMenu}>소개</Link>
           <Link to="/projects" onClick={toggleMenu}>프로젝트</Link>
           <Link to="/stacks" onClick={toggleMenu}>기술 스택</Link>
-          <Link to="/contact" onClick={toggleMenu}>연락</Link>
+          <Link to="/contact" onClick={toggleMenu}>프로필</Link>
         </div>
       </div>
     </nav>

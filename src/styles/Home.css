@@ -1,121 +1,148 @@
-/* 전체 페이지 스타일 */
+/* 📌 전체 페이지 스타일 */
 .home-container {
-    width: 100%;
-    max-width: 1920px;  /* 최대 너비를 1920px로 고정 */
-    height: 120vh;  /* 뷰포트 높이를 100%로 설정 */
-    min-height: 100vh; 
-    margin: 0 auto;
-    text-align: center;
-    font-family: "Arial", sans-serif;
-    color: #ffffff;
-    background-color: #1a1a1a; 
-    padding: 50px 0;
-    
-  }
-  
-  /* Hero Section */
-  .hero {
-    width: 100%;
-    height: 40vh;  /* 40% 화면을 차지하도록 설정 */
-    min-height: 432px;  /* 1080px 기준 40% */
-    background: linear-gradient(135deg, #4a90e2, #1c1c1c);
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  padding: 50px 0;
+}
+
+/* 📌 Hero Section */
+.hero {
+  width: 100%;
+  height: 40vh;
+  min-height: 432px;
+  background: linear-gradient(135deg, #4a90e2, #1c1c1c);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* 📌 CTA 버튼 */
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background: #ff6600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #cc5200;
+}
+
+/* 📌 Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap; /* 🔥 반응형 적용 */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: auto; /* 🔥 높이 자동 조정 */
+  padding: 20px;
+}
+
+.feature-item {
+  width: 30%;
+  background: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  background: #3a3a3a;
+}
+
+.feature-item h2 {
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* 📌 Resume Section */
+.resume-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background: #ff6600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resume-button:hover {
+  background: #cc5200;
+  transform: scale(1.05);
+}
+
+/* 📌 🔥🔥 반응형 적용 🔥🔥 */
+@media screen and (max-width: 768px) {
   .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    margin-bottom: 20px;
-  }
-  
-  /* CTA 버튼 */
-  .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    color: white;
-    background: #ff6600;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background: #cc5200;
-  }
-  
-  /* Features Section */
-  .features {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 50vh;  /* 전체 높이의 50% */
-    min-height: 540px; /* 1080px 기준 50% */
-    padding: 0px;
+      font-size: 2rem; /* 작은 화면에서 글씨 크기 조정 */
   }
 
-  @media screen and (min-width: 1920px) and (min-height: 1080px) {
-    .features {
-      height: 500px; 
-    }
+  .hero p {
+      font-size: 1rem;
   }
-  
+
+  .cta-button {
+      font-size: 1rem;
+      padding: 12px 24px;
+  }
+
+  .features {
+      flex-direction: column; /* 모바일에서는 세로 정렬 */
+      gap: 10px;
+      padding: 10px;
+  }
+
   .feature-item {
-    width: 30%;
-    background: #292929;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background 0.3s ease;
+      width: 90%; /* 모바일에서는 한 줄로 */
+      font-size: 1rem;
   }
-  
-  .feature-item:hover {
-    transform: translateY(-5px);
-    background: #3a3a3a;
+
+  .resume-section {
+      margin-top: 30px;
   }
-  
-  .feature-item h2 {
-    font-size: 1.5rem;
-    color: #ffcc00;
-  }
-  
-  .feature-item p {
-    font-size: 1rem;
-    opacity: 0.8;
-  }
-  
-  /* Resume Section */
-.resume-section {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
+
   .resume-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    color: white;
-    background: #ff6600;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+      font-size: 1rem;
+      padding: 12px 24px;
   }
-  
-  .resume-button:hover {
-    background: #cc5200;
-    transform: scale(1.05);
-  }
-  
+}

@@ -19,7 +19,7 @@ function Home() {
         </div>
         <div className="feature-item">
           <h2>💡 지속적인 학습</h2>
-          <p>더 나은 코드를 작성하기 위해 끊임없이 공부하며 성장하는 개발자입니다.</p>
+          <p>더 나은 코드를 작성하기 위해 공부하며 성장하는 개발자입니다.</p>
         </div>
         <div className="feature-item">
           <h2>🎯 문제 해결 능력</h2>
